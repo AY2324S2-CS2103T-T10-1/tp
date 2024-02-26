@@ -115,6 +115,7 @@
         "listing-all-persons-list": "Listing all persons : list",
         "editing-a-person-edit": "Editing a person : edit",
         "filtering-contacts-using-parameters-find": "Filtering Contacts using parameters: find",
+        "copy-email-addresses-copy": "Copy email addresses: copy",
         "deleting-a-person-delete": "Deleting a person : delete",
         "clearing-all-entries-clear": "Clearing all entries : clear",
         "exiting-the-program-exit": "Exiting the program : exit",
