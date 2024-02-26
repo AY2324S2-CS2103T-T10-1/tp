@@ -4,7 +4,7 @@
   pageNav: 3
 ---
 
-# AB-3 Developer Guide
+# Avengers Assemble Developer Guide
 
 <!-- * Table of Contents -->
 <page-nav-print />
@@ -274,13 +274,35 @@ _{Explain here how the data archiving feature will be implemented}_
 
 **Target user profile**:
 
+* Name: Sarah Johnson
+* Age: 23
+* Occupation: Head Tutor for CS1101S
+
+* head tutor for CS1101S course
+* has a need to manage various aspects of course administration
+* has a need to schedule classes
+* has a need to coordinate with teaching assistants
+* has a need to effectively communicate with students
 * has a need to manage a significant number of contacts
 * prefer desktop apps over other types
 * can type fast
 * prefers typing to mouse interactions
 * is reasonably comfortable using CLI apps
 
-**Value proposition**: manage contacts faster than a typical mouse/GUI driven app
+**Value proposition**: 
+
+* manage contacts faster than a typical mouse/GUI driven app
+* Centralised platform to store and manage contact details for all relevant individuals involved in course administration
+* Easier access to information through organising relevant contacts into different subgroups
+* Direct linkages to students’ schoolwork for easier tracking
+* Able to set up the address book through different data-loading options
+* Able to assist with management of large scale communication
+
+**Problem Scope**:
+
+* The CS1101S Head Tutor will face challenges in effectively organising and managing contact information within the department due to the large scale the course has to operate on. Existing methods, such as paper-based lists or basic digital spreadsheets, lack the necessary functionality to efficiently handle the diverse needs of proper contact management. There is a need for a user-friendly and offline-capable address book solution tailored specifically to the needs of a single user. This address book system should provide features such as easy contact entry and editing, quick search functionality, customizable categorization options, and the ability to add notes for each contact. Additionally, it should operate offline without requiring an internet connection and should not rely on complex database management systems.
+* While the address book system will greatly improve contact management and organisation for the CS1101S Head Tutor, it will not address broader departmental communication or collaboration needs beyond individual contact management since the address book is designed to be a single-user system. It will not facilitate communication between users or provide collaboration tools for group projects or tasks. Additionally, the address book system will not handle complex data analysis or reporting functions beyond basic contact information management. Finally, while the system will provide offline functionality, it will not offer real-time synchronisation with online databases or cloud storage solutions.
+
 
 
 ### User stories
