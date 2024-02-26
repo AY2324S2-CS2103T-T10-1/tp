@@ -13,7 +13,7 @@
 
 ## **Acknowledgements**
 
-_{ list here sources of all reused/adapted ideas, code, documentation, and third-party libraries -- include links to the original source as well }_
+This project is based on the AddressBook-Level3 project created by the [SE-EDU initiative](https://se-education.org).
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -287,14 +287,24 @@ _{Explain here how the data archiving feature will be implemented}_
 
 Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unlikely to have) - `*`
 
-| Priority | As a …​                                    | I want to …​                 | So that I can…​                                                        |
-|----------|--------------------------------------------|------------------------------|------------------------------------------------------------------------|
-| `* * *`  | new user                                   | see usage instructions       | refer to instructions when I forget how to use the App                 |
-| `* * *`  | user                                       | add a new person             |                                                                        |
-| `* * *`  | user                                       | delete a person              | remove entries that I no longer need                                   |
-| `* * *`  | user                                       | find a person by name        | locate details of persons without having to go through the entire list |
-| `* *`    | user                                       | hide private contact details | minimize chance of someone else seeing them by accident                |
-| `*`      | user with many persons in the address book | sort persons by name         | locate a person easily                                                 |
+| Priority | As a …​                                    | I want to …​                           | So that I can…​                                                        |
+|----------|--------------------------------------------|----------------------------------------|------------------------------------------------------------------------|
+| `* * *`  | potential user exploring the app           | see the app populated with sample data | immediately see an example of the app in use                           |
+| `* * *`  | new user                                   | easily clear the example data          | start using the app with real-life data                                |
+| `* * *`  | new user                                   | see usage instructions                 | refer to instructions when I forget how to use the App                 |
+| `* * *`  | new user                                   | add contacts with their details        | start populating the address book                                      |
+| `* * *`  | new user                                   | save the data I input into the app     | don't lose the information I've entered                                |
+| `* * *`  | user                                       | add a new person                       |                                                                        |
+| `* * *`  | user                                       | delete a person                        | remove entries that I no longer need                                   |
+| `* * *`  | user                                       | update and edit contact details        | keep my address book accurate                                          |
+| `* * *`  | user                                       | find a person by name                  | locate details of persons without having to go through the entire list |
+| `* * *`  | user                                       | find a person by name                  | locate details of persons without having to go through the entire list |
+| `* * *`  | head tutor using the app                   | categorise my contacts into groups     | manage different tutorial groups effectively                           |
+| `* * *`  | head tutor using the app                   | copy email addresses of a group        | effectively communicate with target groups                             |
+| `* * *`  | user                                       | find a person by name                  | locate details of persons without having to go through the entire list |
+| `* *`    | user                                       | hide private contact details           | minimize chance of someone else seeing them by accident                |
+| `* *`    | experienced user                           | use the address book offline           | update and interact with it anywhere                                   |
+| `*`      | user with many persons in the address book | sort persons by name                   | locate a person easily                                                 |
 
 *{More to be added}*
 
@@ -325,13 +335,124 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
       Use case resumes at step 2.
 
-*{More to be added}*
+**Use case: Help**
+
+**MSS**
+
+1.  User requests help information.
+2.  AddressBook displays help information.
+3.  User reads the help information.
+
+    Use case ends.
+
+**Use case: Add**
+
+**MSS**
+
+1.  User requests to add a new person.
+2.  AddressBook prompts the user to input details for the new person.
+3.  User inputs details for the new person.
+4.  AddressBook saves the new person's information.
+5.  AddressBook confirms the addition of the new person.
+
+    Use case ends.
+
+**Use case: List**
+
+**MSS**
+
+1.  User requests to list persons.
+2.  AddressBook shows a list of persons.
+3.  User views the list of persons.
+
+    Use case ends.
+
+**Extensions**
+
+* 2a. The list is empty.
+
+    * 2a1. AddressBook displays a message indicating that the list is empty.
+
+      Use case ends.
+
+**Use case: Edit**
+
+**MSS**
+
+1.  User requests to edit a specific person.
+2.  AddressBook prompts the user to select the person to edit.
+3.  User selects the person to edit.
+4.  AddressBook displays the details of the selected person.
+5.  User updates the details of the person.
+6.  AddressBook saves the updated details.
+7.  AddressBook confirms the successful update.
+
+    Use case ends.
+
+**Extensions**
+
+*   2a. The list is empty.
+
+    * 2a1. AddressBook displays a message indicating that the list is empty.
+    
+    Use case ends.
+
+*   3a. The selected person does not exist. 
+
+    * 3a1. AddressBook displays an error message indicating that the person does not exist.
+    
+      Use case resumes at step 2.
+
+**Use case: Find**
+
+**MSS**
+
+1.  User requests to find a specific person.
+2.  AddressBook prompts the user to input search criteria.
+3.  User inputs search criteria.
+4.  AddressBook searches for persons matching the criteria.
+5.  AddressBook displays a list of persons matching the criteria.
+
+    Use case ends.
+
+**Extensions**
+
+*    5a. No persons match the search criteria.
+
+   *   5a1. AddressBook displays a message indicating that no persons match the criteria.
+    
+      Use case ends.
+
+**Use case: Clear**
+
+**MSS**
+
+1.  User requests to clear all persons.
+2.  AddressBook prompts the user to confirm the action.
+3.  User confirms the action.
+4.  AddressBook clears all persons.
+
+    Use case ends.
+
+**Use case: Exit**
+
+**MSS**
+
+1.  User requests to exit the application.
+2.  AddressBook prompts the user to confirm the exit.
+3.  User confirms the exit.
+4.  AddressBook exits the application.
+
+    Use case ends.
 
 ### Non-Functional Requirements
 
-1.  Should work on any _mainstream OS_ as long as it has Java `11` or above installed.
-2.  Should be able to hold up to 1000 persons without a noticeable sluggishness in performance for typical usage.
-3.  A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse.
+1.   Should work on any _mainstream OS_ as long as it has Java `11` or above installed.
+2.   Should be able to hold up to 1000 persons without a noticeable sluggishness in performance for typical usage.
+3.   A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse.
+4.   A user should be able to import up to 1000 contacts from an external source without a noticeable sluggishness in performance for typical usage.
+5.   The application should provide comprehensive documentation and help resources to assist users in understanding how to use the software effectively.
+
 
 *{More to be added}*
 
