@@ -121,6 +121,7 @@
         "deleting-a-person-delete": "Deleting a person : delete",
         "clearing-all-entries-clear": "Clearing all entries : clear",
         "exporting-data-to-a-csv-file-export-to-csv": "Exporting Data to a CSV file : export to csv",
+        "importing-data-from-a-csv-file-import": "Importing Data from a CSV file : import",
         "exiting-the-program-exit": "Exiting the program : exit",
         "saving-the-data": "Saving the data",
         "editing-the-data-file": "Editing the data file",
