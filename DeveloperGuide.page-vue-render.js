@@ -323,43 +323,43 @@ with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. No contacts match the search criteria.")]),_v(" "),_c('ul',[_c('li',[_v("1a1. AddressBook displays a message indicating that no contacts match the criteria.")])]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Use case: Import")])])}
+with(this){return _c('p',[_c('strong',[_v("Use case: UC07 — Import contacts")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_v("User imports contacts from a csv file")]),_v(" "),_c('li',[_v("AddressBook displays a message that all contacts have been imported")]),_v(" "),_c('li',[_v("User is able to see all the contacts imported when a list of contacts is requested\nUse case ends")])])}
+with(this){return _c('ol',[_c('li',[_v("User requests to import contacts from a csv file.")]),_v(" "),_c('li',[_v("AddressBook displays a message that all contacts have been imported.")]),_v(" "),_c('li',[_v("User is able to see all the contacts imported when a list of contacts is requested.\nUse case ends.")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extension")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. AddressBook cannot find file to be imported")]),_v(" "),_c('ul',[_c('li',[_v("1a1. AddressBook displays a message indicating that the file is not recognised")])]),_v(" "),_c('p',[_v("Use case ends.")])]),_v(" "),_c('li',[_c('p',[_v("1b. The file to be imported is not a csv file")]),_v(" "),_c('ul',[_c('li',[_v("1b1. AddressBook displays an error message indicating that the file type is not recognised and should be a csv file")])]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. AddressBook cannot find file to be imported.")]),_v(" "),_c('ul',[_c('li',[_v("1a1. AddressBook displays a message indicating that the file is not recognised.")])]),_v(" "),_c('p',[_v("Use case ends.")])]),_v(" "),_c('li',[_c('p',[_v("1b. The file to be imported is not a csv file.")]),_v(" "),_c('ul',[_c('li',[_v("1b1. AddressBook displays an error message indicating that the file type is not recognised and should be a csv file")])]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Use case UC07: Copy")])])}
-},function anonymous(
-) {
-with(this){return _c('p',[_c('strong',[_v("MSS")])])}
-},function anonymous(
-) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to copy emails of currently displayed contacts.")])]),_v(" "),_c('li',[_c('p',[_v("AddressBook copies the emails of currently displayed contacts\ninto user's clipboard.")])]),_v(" "),_c('li',[_c('p',[_v("AddressBook notifies the user that emails have been copied.")])]),_v(" "),_c('li',[_c('p',[_v("User can paste emails when composing emails.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
-},function anonymous(
-) {
-with(this){return _c('p',[_c('strong',[_v("Extensions")])])}
-},function anonymous(
-) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("2a. No contacts currently displayed.")]),_v(" "),_c('ul',[_c('li',[_v("2a1. AddressBook displays a message indicating that\nno contacts are currently displayed.")])]),_v(" "),_c('p',[_v("Use case ends.")])])])}
-},function anonymous(
-) {
-with(this){return _c('p',[_c('strong',[_v("Use case: UC08 — Clear all contacts")])])}
+with(this){return _c('p',[_c('strong',[_v("Use case: UC08 — Copy email addresses")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS:")])])}
 },function anonymous(
 ) {
-with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to clear all contacts.")])]),_v(" "),_c('li',[_c('p',[_v("AddressBook clears all contacts")])]),_v(" "),_c('li',[_c('p',[_v("AddressBook displays a message indicating that all contacts have been cleared.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to copy emails of currently displayed contacts.")])]),_v(" "),_c('li',[_c('p',[_v("AddressBook copies the emails of currently displayed contacts\ninto user's clipboard.")])]),_v(" "),_c('li',[_c('p',[_v("AddressBook notifies the user that emails have been copied.")])]),_v(" "),_c('li',[_c('p',[_v("User can paste emails when composing emails.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
+},function anonymous(
+) {
+with(this){return _c('ul',[_c('li',[_c('p',[_v("2a. No contacts currently displayed.")]),_v(" "),_c('ul',[_c('li',[_v("2a1. AddressBook displays a message indicating that\nno contacts are currently displayed.")])]),_v(" "),_c('p',[_v("Use case ends.")])])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("Use case: UC09 — Clear all contacts")])])}
+},function anonymous(
+) {
+with(this){return _c('p',[_c('strong',[_v("MSS:")])])}
+},function anonymous(
+) {
+with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to clear all contacts.")])]),_v(" "),_c('li',[_c('p',[_v("AddressBook clears all contacts.")])]),_v(" "),_c('li',[_c('p',[_v("AddressBook displays a message indicating that all contacts have been cleared.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
@@ -368,7 +368,7 @@ with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. User inputs extraneous parameters.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. AddressBook displays a message indicating that an extraneous parameter was found, and confirms User's intention.")]),_v(" "),_c('p',[_v("Use case ends.")])])])])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Use case: UC09 — Export contacts to CSV")])])}
+with(this){return _c('p',[_c('strong',[_v("Use case: UC10 — Export contacts to CSV")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS:")])])}
@@ -377,7 +377,7 @@ with(this){return _c('p',[_c('strong',[_v("MSS:")])])}
 with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to export all contacts and details to a CSV file.")])]),_v(" "),_c('li',[_c('p',[_v("AddressBook exports the contacts to a CSV file.")])]),_v(" "),_c('li',[_c('p',[_v("AddressBook displays a message to confirm that all contacts have been exported to a CSV file.")]),_v(" "),_c('p',[_v("Use case ends.")])])])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_c('strong',[_v("Use case: UC10 — Exit application")])])}
+with(this){return _c('p',[_c('strong',[_v("Use case: UC11 — Exit application")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("MSS:")])])}
@@ -428,6 +428,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_c('em',[_v("{explain how to simulate a missing/corrupted file, and the expected behavior}")])])])]),_v(" "),_c('li',[_c('p',[_c('em',[_v("{ more test cases …​ }")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.3.0")]),_v(", generated on Fri, 1 Mar 2024, 14:21:38 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.3.0")]),_v(", generated on Sat, 2 Mar 2024, 19:01:26 GMT+8]")])])])}
 }];
   
