@@ -62,7 +62,7 @@
         "glossary": "Glossary",
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
-        "deleting-a-contact": "Deleting a contact",
+        "deleting-a-person": "Deleting a person",
         "saving-data": "Saving data"
       },
       "headingKeywords": {}
@@ -110,13 +110,12 @@
         "ab-3-user-guide": "AB-3 User Guide",
         "quick-start": "Quick start",
         "features": "Features",
-        "valid-tags": "Valid tags:",
         "viewing-help-help": "Viewing help : help",
         "parameters": "Parameters:",
         "adding-a-person-add": "Adding a person: add",
         "listing-all-persons-list": "Listing all persons : list",
         "editing-a-person-edit": "Editing a person : edit",
-        "filtering-contacts-using-parameters-find": "Filtering Contacts using parameters: find",
+        "filtering-persons-find": "Filtering persons: find",
         "copy-email-addresses-copy": "Copy email addresses: copy",
         "deleting-a-person-delete": "Deleting a person : delete",
         "clearing-all-entries-clear": "Clearing all entries : clear",
