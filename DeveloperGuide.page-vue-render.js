@@ -275,7 +275,7 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("User requests to add a new perso
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. User does not input all compulsory parameters along with the person.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. AddressBook prompts the user on the proper usage of the command.")]),_v(" "),_c('p',[_v("Step 1a1 is repeated until the data entered is correct.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. User tries to add a person with an existing email address.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. AddressBook displays and error message informing the user that the email address already exists.")]),_v(" "),_c('p',[_v("Step 1b1 is repeated until a valid email address if entered.")])])])])])}
+with(this){return _c('ul',[_c('li',[_c('p',[_v("1a. User does not input all compulsory parameters along with the person.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1a1. AddressBook prompts the user on the proper usage of the command.")]),_v(" "),_c('p',[_v("Step 1a1 is repeated until the data entered is correct.")]),_v(" "),_c('p',[_v("Use case resumes at step 2.")])])])]),_v(" "),_c('li',[_c('p',[_v("1b. User tries to add a person with an existing email address.")]),_v(" "),_c('ul',[_c('li',[_c('p',[_v("1b1. AddressBook displays an error message informing the user that the email address already exists.")]),_v(" "),_c('p',[_v("Step 1b1 is repeated until a valid email address is entered.")]),_v(" "),_c('p',[_v("Use case resumes at step 2.")])])])])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_c('strong',[_v("Use case: UC04 — List all persons")])])}
@@ -428,6 +428,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_c('em',[_v("{explain how to simulate a missing/corrupted file, and the expected behavior}")])])])]),_v(" "),_c('li',[_c('p',[_c('em',[_v("{ more test cases …​ }")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.3.0")]),_v(", generated on Wed, 6 Mar 2024, 21:21:46 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.3.0")]),_v(", generated on Tue, 12 Mar 2024, 20:08:40 GMT+8]")])])])}
 }];
   
