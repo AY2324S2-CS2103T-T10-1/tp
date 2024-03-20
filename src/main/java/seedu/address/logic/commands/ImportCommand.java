@@ -1,25 +1,34 @@
 package seedu.address.logic.commands;
 
+import static seedu.address.commons.util.CollectionUtil.requireAllNonNull;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_ADDRESS;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_EMAIL;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_IMPORT;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_MATRIC_NUMBER;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_NAME;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_PHONE;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_REFLECTION;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_STUDIO;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_TAG;
+
 import java.io.FileReader;
+import java.io.IOException;
 import java.nio.file.Path;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
+import com.opencsv.exceptions.CsvException;
+
 import seedu.address.commons.exceptions.DataLoadingException;
 import seedu.address.logic.commands.exceptions.CommandException;
 import seedu.address.logic.parser.AddCommandParser;
-import seedu.address.logic.parser.ParserUtil;
 import seedu.address.logic.parser.Prefix;
 import seedu.address.logic.parser.exceptions.ParseException;
 import seedu.address.model.Model;
-import seedu.address.model.util.SampleDataUtil;
-import seedu.address.storage.AddressBookStorage;
-import seedu.address.storage.JsonAddressBookStorage;
-
-
-import static seedu.address.commons.util.CollectionUtil.requireAllNonNull;
-import static seedu.address.logic.parser.CliSyntax.*;
 
 /**
  * Changes the  of an existing person in the address book.
@@ -41,6 +50,25 @@ public class ImportCommand extends Command {
     private static final String MESSAGE_PARSE_ERROR = "Invalid data format in %s";
     private final Path filePath;
     private final AddCommandParser addCommandParser = new AddCommandParser();
+
+    /**
+     * Represents the order of the data that should be parsed into the addCommandParser
+     */
+    private final String[] header = {"name", "phone", "email", "address", "matric", "reflection", "studio", "tags"};
+
+    /**
+     * Represents a mapping of String to prefix of the data that should be parsed into the addCommandParser.
+     */
+    private final Map<String, Prefix> prefixMap = Map.of(
+            "name", PREFIX_NAME,
+            "phone", PREFIX_PHONE,
+            "email", PREFIX_EMAIL,
+            "address", PREFIX_ADDRESS,
+            "matric", PREFIX_MATRIC_NUMBER,
+            "reflection", PREFIX_REFLECTION,
+            "studio", PREFIX_STUDIO,
+            "tags", PREFIX_TAG
+    );
 
     /**
      * @param filePath absolute path of file (path starts from C:...)
@@ -70,9 +98,13 @@ public class ImportCommand extends Command {
             throw new CommandException(String.format(MESSAGE_DATA_LOAD_ERROR, filePath));
         }
 
-        return new CommandResult(String.format(MESSAGE_IMPORT_SUCCESS, filePath));
+        return new CommandResult(String.format(MESSAGE_IMPORT_SUCCESS, filePath.toString()));
     }
-
+    /**
+     * Reads the csv file and returns a list of maps,
+     * where each map represents a row of person's data in the csv file.
+     * @throws DataLoadingException
+     */
     public List<Map<String, String>> readCsvFile() throws DataLoadingException {
         try {
             CSVReader reader = new CSVReaderBuilder(new FileReader(filePath.toString())).build();
@@ -88,33 +120,26 @@ public class ImportCommand extends Command {
                 data.add(map);
             }
             return data;
-        } catch (Exception e) {
+        } catch (IOException | CsvException e) {
             throw new DataLoadingException(e);
         }
     }
 
     /**
-     * Represents the order of the data that should be parsed into the addCommandParser
+     * Converts a map of person data to a string that can be parsed by the addCommandParser
+     * @param personData
+     * @return
      */
-    private final String[] header = {"name", "phone", "email", "address", "tags"};
-
-    /**
-     * Represents a mapping of String to prefix of the data that should be parsed into the addCommandParser.
-     */
-    private final Map<String, Prefix> prefixMap = Map.of(
-            "name", PREFIX_NAME,
-            "phone", PREFIX_PHONE,
-            "email", PREFIX_EMAIL,
-            "address", PREFIX_ADDRESS,
-            "tags", PREFIX_TAG
-    );
-
     public String convertToAddCommandInput(Map<String, String> personData) {
         StringBuilder sb = new StringBuilder();
         sb.append(" ");
         for (String key : header) {
             // Maybe in the future, I can add a check to see if the value is empty
             // Maybe in the future, I make CliSyntax an enum class?
+            if (personData.get(key).isEmpty()) {
+                // skip empty values
+                continue;
+            }
             if (key.equals("tags")) {
                 // tag is a special case, it can have multiple values
                 String tags = personData.get(key);
