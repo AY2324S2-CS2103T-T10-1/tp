@@ -139,6 +139,20 @@
       "headingKeywords": {}
     },
     {
+      "src": "release_1.2/release_notes_1.2.md",
+      "headings": {
+        "avengers-assemble-v1-2-release-notes": "Avengers Assemble v1.2 Release Notes",
+        "what-s-new": "What's New",
+        "1-export-feature": "1. Export Feature",
+        "2-import-feature": "2. Import Feature",
+        "3-find-feature": "3. Find Feature",
+        "4-copy-feature": "4. Copy Feature",
+        "5-new-fields-added": "5. New Fields Added",
+        "6-bug-fixes": "6. Bug Fixes"
+      },
+      "headingKeywords": {}
+    },
+    {
       "src": "team/johndoe.md",
       "title": "John Doe's Project Portfolio Page",
       "headings": {
