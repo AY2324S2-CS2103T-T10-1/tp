@@ -134,6 +134,7 @@
         "exam-management-features": "Exam Management Features",
         "importing-exam-scores-from-a-csv-file-importexamscores": "Importing Exam Scores from a CSV File : importExamScores",
         "adding-an-exam-addexam": "Adding an Exam : addExam",
+        "deleting-an-exam-deleteexam": "Deleting an Exam : deleteExam",
         "selecting-an-exam-selectexam": "Selecting an Exam : selectExam",
         "adding-an-exam-score-addscore": "Adding an Exam Score : addScore",
         "editing-an-exam-score-editscore": "Editing an Exam Score : editScore",
