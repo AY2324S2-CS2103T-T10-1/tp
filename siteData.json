@@ -135,7 +135,7 @@
         "clearing-all-entries-clear": "Clearing All Entries : clear",
         "exporting-data-to-a-csv-file-export": "Exporting Data to a CSV File : export",
         "importing-persons-from-a-csv-file-import": "Importing Persons from a CSV File : import",
-        "importing-exam-scores-from-a-csv-file-importexam": "Importing Exam Scores from a CSV File : importExam",
+        "importing-exam-scores-from-a-csv-file-importexamscores": "Importing Exam Scores from a CSV File : importExamScores",
         "mean-and-median-of-exam-scores": "Mean and Median of Exam Scores",
         "exiting-the-program-exit": "Exiting the Program : exit",
         "additional-information": "Additional Information",
