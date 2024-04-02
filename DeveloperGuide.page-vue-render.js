@@ -287,13 +287,13 @@ with(this){return _c('p',[_v("For the "),_c('code',{pre:true,attrs:{"class":"hlj
 with(this){return _c('h3',{attrs:{"id":"automatic-tagging-of-persons"}},[_v("Automatic Tagging of Persons"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#automatic-tagging-of-persons","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("Tags are automatically added during the parsing of the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add")]),_v(" command. The tags are based on the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Matric")]),_v(", "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Studio")]),_v(" and "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Reflection")]),_v(" fields of the person being added.")])}
+with(this){return _c('p',[_v("A "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("student")]),_v(" tag is automatically added during the parsing of the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add")]),_v(" command based on the presence of the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Matric")]),_v(" field of the person being added.")])}
 },function anonymous(
 ) {
 with(this){return _c('h4',{attrs:{"id":"implementation-details-4"}},[_v("Implementation Details"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#implementation-details-4","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('p',[_v("During the parsing of the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add")]),_v(" command, the parser will check if the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Matric")]),_v(", "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Studio")]),_v(" or "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Reflection")]),_v(" fields match a pattern that corresponds to them being a student, teaching assistant (TA), or course instructor.\nThe parser also generates "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Tag")]),_v(" objects based on the user input. The existing tags are updated with the new automatically generated tag.")])}
+with(this){return _c('p',[_v("During the parsing of the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("add")]),_v(" command, the parser will check if the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Matric")]),_v(" field is present, meaning they are a student.\nThe parser also generates "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("Tag")]),_v(" objects based on the user input. The existing tags are updated with the new automatically generated tag.")])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"import-contacts-from-csv-file"}},[_v("Import contacts from CSV file"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#import-contacts-from-csv-file","onclick":"event.stopPropagation()"}})])}
@@ -734,6 +734,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_c('em',[_v("{explain how to simulate a missing/corrupted file, and the expected behavior}")])])])]),_v(" "),_c('li',[_c('p',[_c('em',[_v("{ more test cases …​ }")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Tue, 2 Apr 2024, 22:45:35 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Tue, 2 Apr 2024, 22:46:18 GMT+8]")])])])}
 }];
   
