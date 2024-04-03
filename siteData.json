@@ -136,6 +136,7 @@
         "adding-an-exam-addexam": "Adding an Exam : addExam",
         "deleting-an-exam-deleteexam": "Deleting an Exam : deleteExam",
         "selecting-an-exam-selectexam": "Selecting an Exam : selectExam",
+        "deselecting-an-exam-deselectexam": "Deselecting an Exam : deselectExam",
         "adding-an-exam-score-addscore": "Adding an Exam Score : addScore",
         "editing-an-exam-score-editscore": "Editing an Exam Score : editScore",
         "deleting-an-exam-score-deletescore": "Deleting an Exam Score : deleteScore",
