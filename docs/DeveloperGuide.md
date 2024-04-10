@@ -628,9 +628,37 @@ Reference Diagram for each addCommand in importCommand
 
 <puml src="diagrams/ImportSequenceDiagramRef.puml" alt="Interactions Inside the Add Component for the `import` Command" />
 
+##### Parsing CSV File
+The CSV file is parsed with the `OpenCSV` library and a `List<String[]>` is created, with each `String[]` representing a row in the CSV file.
+
+#### Validation
+
+##### File Validation
+Handled by ImportCommand, with the help of ImportCommandParser and CsvUtil. ImportCommandParser will check if the file passed is a CSV file.
+CsvUtil will check if the CSV file is valid and will return a list of persons and an error report. The error report will be displayed to the user if there are any errors.
+
+Overall, the conditions checked are:
+- The file exists
+- The file is a CSV file
+- **The first row of the file is the header row**. In which all compulsory fields for creating a persons object
+  (ie `name`, `email`, `address`, `phone`) must be present. Optional headers will be read if present. Headers in the csv that are not a field in `Person` will be ignored.
+
+If any of the above conditions are not met, an error message will be returned and no contacts will be imported.
+
+If the conditions are met, the CSV file will be parsed and the data will be validated. Only valid rows will be added to the list of persons.
+Invalid rows will be added to the error report.
+
+A **column** will be ignored if:
+1. The header for that column is not a field in `Person`.
+
+A **row** will be ignored if:
+1. The row has an incorrect number of fields as the number of headers in the header row
+2. Any of the compulsory fields for creating a person object is missing
+
 ##### Parsing User Input
 
-The `ImportCommandParser` class is responsible for parsing user input to extract the file path of the CSV file to be imported. It uses the `ArgumentTokenizer` to tokenize the input string, extracting the file path of the CSV file to be imported.
+The `ImportCommandParser` class is responsible for parsing user input to extract the file path of the CSV file to be imported. 
+It uses the `ArgumentTokenizer` to tokenize the input string, extracting the file path of the CSV file to be imported.
 
 
 #### Design Considerations
@@ -642,27 +670,6 @@ The main concern in the increased coupling between `ImportCommand` and `AddComma
 **Aspect: How to handle duplicate persons**
 
 Duplicate records in the imported CSV file is handled by `AddCommand`, which will check if the person already exists in the model. If the person already exists, the `AddCommand` throws a `CommandException` which is caught by the `ImportCommand` and added to an error report.
-
-**Aspect: How to handle invalid CSV files**
-
-Handled by ImportCommand, with the help of ImportCommandParser and CsvUtil. ImportCommandParser will check if  is a CSV file. 
-CsvUtil will check if the CSV file is valid and will return a list of persons and an error report. The error report will be displayed to the user if there are any errors.
-
-Overall, the conditions checked are:
-- The file exists
-- The file is a CSV file
-- **The first row of the file is the header row**. In which all compulsory fields for creating a persons object
-  (ie `name`, `email`, `address`, `phone`)are present. Optional headers will be read if present. Headers in the csv that are not a field in `Person` will be ignored.
-
-**Aspect: How to handle invalid rows in the CSV file**
-
-Handled by CsvUtil. 
-
-CsvUtil will check if the rows in the CSV file are valid. If the row is invalid, the row will not be added to `personsData` and an error message will be added to the error report
-
-The conditions checked are:
-- The row has the correct number of fields as the number of headers in the header row
-- No compulsory fields are not empty
 
 **Aspect: How to handle duplicate headers in the CSV file**
 
