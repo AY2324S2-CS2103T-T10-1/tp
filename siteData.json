@@ -63,6 +63,8 @@
         "import-exam-scores-feature-importexamscores": "Import Exam Scores feature : importExamScores",
         "find-feature-find": "Find feature : find",
         "exam-features": "Exam Features",
+        "exam-score-features": "Exam Score Features",
+        "exam-statistics-feature": "Exam Statistics Feature",
         "planned-enhancements": "Planned Enhancements",
         "find-command-enhance-input-validation-for-prefixes-other-than-lt-and-mt": "find Command: Enhance input validation for prefixes other than lt and mt",
         "ui-wrap-text-on-result-box-so-only-1-scrollbar-is-needed": "UI: Wrap text on result box so only 1 scrollbar is needed",
@@ -87,7 +89,17 @@
         "listing-all-persons-list": "Listing all persons: list",
         "finding-a-person": "Finding a person",
         "copying-emails-2": "Copying emails",
-        "importing-exam-scores-importexamscores": "Importing Exam Scores: importExamScores"
+        "exporting-data-to-a-csv-file": "Exporting Data to a CSV File",
+        "importing-exam-scores-importexamscores": "Importing Exam Scores: importExamScores",
+        "adding-a-persons-s-exam-score": "Adding a Persons's Exam Score",
+        "editing-a-person-s-exam-score": "Editing a Person's Exam Score",
+        "deleting-a-person-s-exam-score": "Deleting a Person's Exam Score",
+        "mean-and-median-of-exam-scores": "Mean and Median of Exam Scores",
+        "appendix-effort": "Appendix: Effort",
+        "difficulty-level": "Difficulty Level",
+        "challenges-faced": "Challenges Faced",
+        "effort-required": "Effort Required",
+        "achievements": "Achievements"
       },
       "headingKeywords": {}
     },
