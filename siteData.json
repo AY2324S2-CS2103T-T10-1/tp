@@ -77,11 +77,15 @@
         "appendix-instructions-for-manual-testing": "Appendix: Instructions for manual testing",
         "launch-and-shutdown": "Launch and shutdown",
         "saving-data": "Saving data",
+        "getting-help": "Getting help",
+        "clearing-all-persons": "Clearing all persons",
         "adding-a-person-add": "Adding a person: add",
         "editing-a-person-edit": "Editing a person: edit",
         "deleting-a-person-delete": "Deleting a person: delete",
         "deleting-shown-persons-deleteshown": "Deleting shown persons: deleteShown",
         "listing-all-persons-list": "Listing all persons: list",
+        "finding-a-person": "Finding a person",
+        "copying-emails-2": "Copying emails",
         "importing-exam-scores-importexamscores": "Importing Exam Scores: importExamScores"
       },
       "headingKeywords": {}
