@@ -420,7 +420,7 @@ The `deleteShown` command relies on the `filteredPersons` list in the `Model` co
 
 ##### Executing the Command
 
-The `deleteShown` command first retrives the `filteredPersons` list from the `Model` component using the `getFilteredPersonList` method. The `deleteShown` command then iterates through the `filteredPersons` list and deletes all currently shown `Persons` from the `UniquePersonList`.
+The `deleteShown` command first retrieves the `filteredPersons` list from the `Model` component using the `getFilteredPersonList` method. The `deleteShown` command then iterates through the `filteredPersons` list and deletes all currently shown `Persons` from the `UniquePersonList`.
 
 If the currently filtered list does is not showing between 0 and the total number of existing persons, the `deleteShown` command will throw a `CommandException`.
 
