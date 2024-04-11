@@ -15,7 +15,7 @@ participant "m:Model" as Model MODEL_COLOR
 end box
 
 box Commons COMMONS_COLOR_T1
-participant "<<class>>\n:CsvUtil" as CsvUtil COMMONS_COLOR
+participant "<<class>>\nCsvUtil" as CsvUtil COMMONS_COLOR
 end box
 
  -> ImportCommand : execute(m)
