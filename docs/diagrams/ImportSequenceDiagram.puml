@@ -21,7 +21,7 @@ end box
  -> ImportCommand : execute(m)
 activate ImportCommand
 
-ImportCommand -> CsvUtil : readCsvfile()
+ImportCommand -> CsvUtil : readCsvFile()
 activate CsvUtil
 CsvUtil --> ImportCommand : personsData
 deactivate CsvUtil
