@@ -1022,7 +1022,7 @@ with(this){return _c('h5',{attrs:{"id":"concrete-examples-of-validation"}},[_v("
 with(this){return _c('p',[_v("For concrete examples of the validation process, "),_c('a',{attrs:{"href":"#importing-exam-scores-importexamscores"}},[_v("refer to the manual testing section of the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("importExamScores")]),_v(" command")]),_v(".")])}
 },function anonymous(
 ) {
-with(this){return _c('h4',{attrs:{"id":"score-statistics-feature"}},[_c('strong',[_v("Score Statistics Feature")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#score-statistics-feature","onclick":"event.stopPropagation()"}})])}
+with(this){return _c('h4',{attrs:{"id":"score-statistics-command"}},[_c('strong',[_v("Score Statistics Command")]),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#score-statistics-command","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("The exam statistics feature allows users to view the mean and median scores of the selected exam. The statistics are displayed in the "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("StatusBarFooter")]),_v(" element of the UI on the right side.")])}
@@ -1811,6 +1811,6 @@ with(this){return _c('h5',{attrs:{"id":"bug-fixing-and-testing"}},[_v("Bug Fixin
 with(this){return _c('h4',{attrs:{"id":"achievements"}},[_v("Achievements"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#achievements","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Sat, 13 Apr 2024, 21:56:58 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.4.0")]),_v(", generated on Sat, 13 Apr 2024, 21:58:01 GMT+8]")])])])}
 }];
   
